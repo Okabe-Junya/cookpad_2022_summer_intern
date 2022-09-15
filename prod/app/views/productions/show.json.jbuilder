@@ -1,1 +1,3 @@
-json.partial! "productions/production", production: @production
+# frozen_string_literal: true
+
+json.partial! 'productions/production', production: @production

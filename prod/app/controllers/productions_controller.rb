@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class ProductionsController < ApplicationController
-  before_action :set_production, only: %i[ show edit update destroy ]
+  before_action :set_production, only: %i[show edit update destroy]
 
   # GET /productions or /productions.json
   def index
@@ -7,8 +9,7 @@ class ProductionsController < ApplicationController
   end
 
   # GET /productions/1 or /productions/1.json
-  def show
-  end
+  def show; end
 
   # GET /productions/new
   def new
@@ -16,8 +17,7 @@ class ProductionsController < ApplicationController
   end
 
   # GET /productions/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /productions or /productions.json
   def create
@@ -25,7 +25,7 @@ class ProductionsController < ApplicationController
 
     respond_to do |format|
       if @production.save
-        format.html { redirect_to production_url(@production), notice: "Production was successfully created." }
+        format.html { redirect_to production_url(@production), notice: 'Production was successfully created.' }
         format.json { render :show, status: :created, location: @production }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ProductionsController < ApplicationController
   def update
     respond_to do |format|
       if @production.update(production_params)
-        format.html { redirect_to production_url(@production), notice: "Production was successfully updated." }
+        format.html { redirect_to production_url(@production), notice: 'Production was successfully updated.' }
         format.json { render :show, status: :ok, location: @production }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +52,20 @@ class ProductionsController < ApplicationController
     @production.destroy
 
     respond_to do |format|
-      format.html { redirect_to productions_url, notice: "Production was successfully destroyed." }
+      format.html { redirect_to productions_url, notice: 'Production was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_production
-      @production = Production.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def production_params
-      params.require(:production).permit(:name, :category, :price, :comment)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_production
+    @production = Production.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def production_params
+    params.require(:production).permit(:name, :category, :price, :comment)
+  end
 end
