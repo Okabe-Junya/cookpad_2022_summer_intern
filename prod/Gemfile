@@ -29,7 +29,7 @@ gem 'stimulus-rails'
 gem 'jbuilder'
 
 # view
-gem 'bootstrap'
+gem 'bootstrap', '>= 3.0'
 gem 'jquery-rails'
 gem 'popper_js'
 gem 'tether-rails'

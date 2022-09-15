@@ -1,2 +1,27 @@
-<h1>テストアプリ</h1>
-<h2>一覧</h2>
+<!--- <h1>テストアプリ</h1> --->
+<h2>新着の食材一覧</h2>
+<body>
+    <div class="board">
+    <% cnt = 0 %>
+    <% @productions.each do |production| %>
+        <% cnt += 1 %>
+        <% if cnt == 10 %>
+            <% break %>
+        <% end %>
+        <div class="box">
+        食材名: <%= production.name %><br>
+        <%= image_tag 'character_hangyojin.png', class:'image' %>
+        <br>
+        カテゴリ: <%= production.category %><br>
+        値段: <%= production.price %><br>
+        コメント: <%= production.comment %><br>
+            <div class="message_creater">
+            生産者の方へメッセージを送る <%link_to "send_message" %> <br>
+            </div>
+        </div>
+    <% end %>
+    </div>
+    <div class = "create-product">
+    <%= link_to "新規作成", new_production_path %>
+    </div>
+</body>
