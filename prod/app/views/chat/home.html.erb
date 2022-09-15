@@ -1,8 +1,19 @@
 <h1>Messages</h1>
 <div class="p1 chat">
-<p>テストメッセージ</p>
+<p>テストメッセージです．</p>
 <p>こんにちは</p>
 </div>
 <div class="p2 chat">
 <p>こんにちは！！</p>
+</div>
+<div class="p1 chat">
+<p>この野菜の美味しい食べ方はありますか？？</p>
+</div>
+<p>
+<div class="new-message">
+<%= form_with do |form| %>
+  メッセージを送信する
+<%= form.text_field :query %>
+<% end %>
+</p>
 </div>
