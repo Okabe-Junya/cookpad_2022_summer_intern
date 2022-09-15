@@ -16,7 +16,7 @@
         値段: <%= production.price %><br>
         コメント: <%= production.comment %><br>
             <div class="message_creater">
-            生産者の方へメッセージを送る <%link_to "send_message" %> <br>
+                <%= link_to "生産者の方へメッセージを送る", "chat/home" %> <br>
             </div>
         </div>
     <% end %>
