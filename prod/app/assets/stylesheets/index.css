@@ -1,0 +1,54 @@
+.board {
+    display: grid;
+    grid-template-rows: 280px 280px 280px;
+    grid-template-columns: 280px 280px 280px;
+    justify-content: center;
+}
+
+
+.box {
+  background: #666;
+  display: fixed;
+  text-align: left;
+  justify-content: left;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.image {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.message_creater {
+    background-color: #666;
+    display: block;
+    justify-content: bottom;
+    text-align: text-bottom;
+    align-items: fixed;
+    text-align: center;
+}
+
+.message_creater a {
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.message_creater a:hover {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-product {
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
