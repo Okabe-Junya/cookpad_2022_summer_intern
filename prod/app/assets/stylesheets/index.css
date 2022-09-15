@@ -1,13 +1,10 @@
 .board {
     display: grid;
-    grid-template-rows: 250px 250px 250px;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 280px 280px 280px;
+    grid-template-columns: 280px 280px 280px;
     justify-content: center;
 }
 
-body {
-  display: flex;
-}
 
 .box {
   background: #444;
@@ -15,7 +12,13 @@ body {
   display: flex;
   align-items: left;
   justify-content: left;
-  color: #AAA;
+  color: #fff;
   padding: 10px;
   margin: 10px;
+}
+
+.create-product {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 40px;
 }

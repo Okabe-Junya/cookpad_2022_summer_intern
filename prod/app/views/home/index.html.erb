@@ -5,7 +5,7 @@
     <% cnt = 0 %>
     <% @productions.each do |production| %>
         <% cnt += 1 %>
-        <% if cnt == 9 %>
+        <% if cnt == 10 %>
             <% break %>
         <% end %>
         <div class="box">
@@ -16,6 +16,7 @@
         </div>
     <% end %>
     </div>
-
+    <div class = "create-product">
     <%= link_to "新規作成", new_production_path %>
+    </div>
 </body>
