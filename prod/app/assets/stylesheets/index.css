@@ -9,12 +9,30 @@
 .box {
   background: #444;
   border: 1px solid #555;
-  display: flex;
-  align-items: left;
+  display: fixed;
+  text-align: left;
   justify-content: left;
   color: #fff;
   padding: 10px;
   margin: 10px;
+}
+
+.image {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.message_creater {
+    background: #444;
+    border: 1px solid #555;
+    display: fixed;
+    justify-content: bottom;
+    text-align: text-bottom;
+    align-items: fixed;
+    color: #fff;
 }
 
 .create-product {
