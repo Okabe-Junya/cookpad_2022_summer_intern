@@ -10,10 +10,10 @@
         <% end %>
         <div class="box">
         食材名: <%= production.name %><br>
-        <%= image_tag 'character_hangyojin.png', class:'image' %>
+        <%= image_tag "#{production.category}.png", class:'image' %>
         <br>
         カテゴリ: <%= production.category %><br>
-        値段: <%= production.price %><br>
+        値段: <%= production.price %> 円<br>
         コメント: <%= production.comment %><br>
             <div class="message_creater">
                 <%= link_to "生産者の方へメッセージを送る", "chat/home" %> <br>
