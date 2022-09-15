@@ -1,0 +1,21 @@
+.board {
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: center;
+}
+
+body {
+  display: flex;
+}
+
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  color: #AAA;
+  padding: 10px;
+  margin: 10px;
+}
