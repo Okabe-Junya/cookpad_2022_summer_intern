@@ -1,0 +1,38 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+prod/log/*
+prod/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+prod/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+prod/storage/*
+!/storage/.keep
+prod/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+/public/assets
+
+# Ignore master key for decrypting credentials and more.
+prod/config/master.key
+
+# ---
+prod/node_modules/
+
+prod/public/packs
+prod/public/packs-test
+prod/node_modules
+prod/yarn-error.log
+prod/yarn-debug.log*
+prod/.yarn-integrity
+
+.DS_Store
+*.key
